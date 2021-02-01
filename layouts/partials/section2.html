@@ -15,7 +15,9 @@
         <article class="media icon-box">
           <figure class="media-left">
             <p class="image">
-              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+              <img
+                style="height: 150px !important; width: 150px !important;"
+                src="{{ printf "/images/%s" .icon | relURL }}">
             </p>
           </figure>
           <div class="media-content mt-50">

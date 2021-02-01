@@ -4,12 +4,14 @@
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
-<footer class="footer footer-dark">
+<footer class="footer">
   <div class="container">
     <div class="columns">
       <div class="column">
         <div class="footer-logo">
-          <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
+          <img
+            style="height: 40px !important; width: 164px !important"
+            src="{{ printf "/images/%s" $logo | relURL }}">
         </div>
       </div>
       {{- range $quickLinks }}
