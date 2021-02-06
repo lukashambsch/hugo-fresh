@@ -1,0 +1,17 @@
+{{- $socialMedia      := .Site.Params.socialMedia }}
+
+<div class="social-bar">
+  <div class="social-container">
+    <a href="tel:8006138755">
+      <span><i class="fa fa-phone"></i>+1 800 613 8755</span>
+    </a>
+    <a href="mailto:info@nanniesintl.com">
+      <span><i class="fa fa-envelope"></i>info@nanniesintl.com</span>
+    </a>
+    {{- range $socialMedia }}
+    <a href="{{ .link }}">
+      <span><i class="fa fa-{{ .icon }}"></i></span>
+    </a>
+    {{- end }}
+  </div>
+</div>

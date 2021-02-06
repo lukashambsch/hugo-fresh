@@ -1,0 +1,35 @@
+$social-color: rgba( 255, 255, 255, 0.6 );
+
+.social-bar {
+  background: $primary;
+  height: 33px;
+  width: 100vw;
+  color: $social-color;
+
+  .social-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+
+    @media (min-width: 800px) {
+      width: 50%;
+    }
+
+    a {
+      margin-left: 12px;
+      color: $social-color;
+      font-size: .75rem;
+
+      &:last-child {
+        margin-right: 4px;
+      }
+
+      i {
+        margin-right: 4px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
